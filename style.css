@@ -1,0 +1,281 @@
+/* فونت شاد و کودکانه */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background: linear-gradient(135deg, #ffe6f0, #e6f7ff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* هدر رنگی و شاد */
+header {
+    background: linear-gradient(90deg, #ff6f91, #ff9671, #ffc75f, #f9f871);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 28px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* لینک‌ها */
+a {
+    text-decoration: none;
+    color: #ff3c78;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6f91;
+    text-decoration: underline;
+}
+
+/* دکمه‌های شاد */
+button {
+    background: linear-gradient(45deg, #ff6f91, #ffc75f, #70ffb2);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* کارت‌ها شاد و رنگارنگ */
+.course-card {
+    background: linear-gradient(135deg, #ffe6f0, #ffebc1, #d4f1f4);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-10px) rotate(-2deg);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+/* بخش دوره‌ها */
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* هور افکت برای بخش‌ها */
+.course-card h3 {
+    color: #ff3c78;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #333;
+}
+
+/* Footer رنگارنگ */
+footer {
+    background: linear-gradient(90deg, #70ffb2, #ffc75f, #ff6f91);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* واکنش‌گرا برای موبایل */
+@media (max-width: 768px) {
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        font-size: 24px;
+    }
+}
+
+/* فرم تماس کودکانه با اندازه مناسب */
+.contact {
+    background: linear-gradient(135deg, #ffefba, #ffffff);
+    padding: 35px; /* کمی بزرگتر */
+    border-radius: 18px;
+    margin: 30px auto; /* وسط صفحه با فاصله */
+    max-width: 600px; /* اندازه مناسب */
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact h2 {
+    color: #ff6f91;
+    font-size: 26px; 
+    margin-bottom: 25px;
+}
+
+.contact label {
+    display: block;
+    margin: 10px 0 6px;
+    font-weight: bold;
+    color: #ff9671;
+    font-size: 15px;
+}
+
+.contact input, 
+.contact textarea {
+    width: 95%;
+    padding: 12px; 
+    border-radius: 14px;
+    border: 2px solid #ffc75f;
+    margin-bottom: 12px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 15px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #ff3c78;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255,60,120,0.5);
+}
+
+.contact button {
+    background: linear-gradient(45deg, #ff6f91, #ffc75f, #70ffb2);
+    color: white;
+    border: none;
+    padding: 12px 25px; 
+    border-radius: 22px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact button:hover {
+    transform: scale(1.07) rotate(-4deg);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+#successMessage {
+    margin-top: 12px;
+    font-weight: bold;
+    color: green;
+}
+
+/* واکنش‌گرا */
+@media (max-width: 768px) {
+    .contact input,
+    .contact textarea {
+        width: 95%;
+    }
+}
+header {
+    background: linear-gradient(270deg, #ff6f91, #ffc75f, #70ffb2, #ff6f91);
+    background-size: 800% 800%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+@keyframes gradientBG {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+}
+.course-card:hover {
+    transform: translateY(-10px) rotate(-5deg) scale(1.05);
+    box-shadow: 0 15px 35px rgba(255, 100, 150, 0.4);
+}
+
+/* متن خوش آمدگویی شاد */
+.welcome {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+    line-height: 1.8;
+    background: linear-gradient(135deg, #fff7f0, #e6f7ff);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease-in;
+}
+
+.welcome h1 {
+    font-size: 32px;
+    color: #ff3c78;
+    margin-bottom: 25px;
+    animation: slideDown 1s ease-out;
+}
+
+.welcome p {
+    margin: 12px 0;
+    color: #555;
+}
+
+/* رنگ‌های شاد برای کلمات */
+.highlight1 { color: #70ffb2; font-weight: bold; }
+.highlight2 { color: #ffc75f; font-weight: bold; }
+.highlight3 { color: #ff9671; font-weight: bold; }
+.highlight4 { color: #ff6f91; font-weight: bold; }
+.highlight5 { color: #ff3c78; font-weight: bold; }
+
+/* انیمیشن‌ها */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideDown {
+    from {transform: translateY(-20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+/* انیمیشن گرادیان رنگین‌کمانی */
+:root {
+  --speed: 18s;         /* سرعت حرکت */
+  --blur: 0px;          /* اگر خواستی نرم‌تر بشه: 8px */
+  --saturation: 100%;   /* اشباع رنگ‌ها */
+}
+
+/* انیمیشن گرادیان رنگین‌کمانی */
+:root {
+  --speed: 18s;         /* سرعت حرکت */
+  --blur: 0px;          /* اگر خواستی نرم‌تر بشه: 8px */
+  --saturation: 100%;   /* اشباع رنگ‌ها */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(120deg,
+    hsl(0 100% 60%),
+    hsl(45 100% 60%),
+    hsl(90 100% 50%),
+    hsl(180 100% 55%),
+    hsl(240 100% 65%),
+    hsl(300 100% 60%)
+  );
+  background-size: 300% 300%;
+  animation: rainbowShift var(--speed) ease-in-out infinite;
+  filter: saturate(var(--saturation)) blur(var(--blur));
+}
+
+@keyframes rainbowShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
